@@ -1,0 +1,18 @@
+
+// grid one column
+%gridOne{
+    grid-template-columns: 1fr;
+}
+
+// grid two columns 
+%gridTwo{
+    grid-template-columns: 1fr 1fr;
+}
+
+// grid three columns 
+%gridThree{
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+
+

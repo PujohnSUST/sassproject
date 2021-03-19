@@ -1,0 +1,60 @@
+
+// FOOTER AREA
+
+.footer{
+
+& .row{
+    grid-template-columns:2fr 1fr 1fr 1fr;
+}
+
+
+@include breakpoint(xs-big){
+    & .row{
+    grid-template-columns:1fr!important;
+    }
+}
+
+@include breakpoint(sm-md){
+    & .row{
+    grid-template-columns:1fr 1fr!important;
+    }
+}
+
+&-single{
+    padding: 20px;
+
+    img{
+    margin-bottom: 15px;
+    }
+
+    h4{
+    text-transform: uppercase;
+    color:$primary-color;
+    margin-bottom: 10px;
+
+    }
+
+    ul{
+    padding-left:15px;
+    list-style: circle;
+
+    li{
+        margin:3px 0px;
+
+        a{
+        display: block;
+        text-transform: capitalize;
+        color: #717171;
+
+        &:hover, &:focus{
+            text-decoration: underline;
+            color:$primary-color;
+        }
+        }
+    }
+    }
+
+
+}
+
+}

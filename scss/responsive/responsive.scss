@@ -1,0 +1,49 @@
+
+
+
+
+
+// @mixin breakpoint($class) {
+//     @if $class == sm
+//     {
+//       @media (min-width: 750px) { @content; }
+//     }
+//     @else if $class == lg
+//     {
+//       @media (min-width: 1280px) { @content; }
+//     }
+//     @else if $class == md
+//     {
+//       @media (min-width: 1024px) { @content; }
+//     }
+//     @else if $class == xs-only
+//     {
+//       @media (max-width: 749px) { @content; }
+//     }
+//     @else if $class == sm-only
+//     {
+//       @media (min-width: 750px) and (max-width: 1023px) { @content; }
+//     }
+//     @else if $class == md-only
+//     {
+//       @media (min-width: 1024px) and (max-width: 1279px) { @content; }
+//     }
+//     @else if $class == sm-max
+//     {
+//       @media (max-width: 1023px) { @content; }
+//     }
+//     @else if $class == md-max
+//     {
+//       @media (max-width: 1279px) { @content; }
+//     }
+//     @else if $class == ipad-only
+//     {
+//       @media (min-width: 750px) and (max-width: 1279px) { @content; }
+//     }
+//     @else
+//     {
+//       @warn "Breakpoint mixin supports: sm, lg, md, xs-only, md-only, sm-only, md-max, sm-max, ipad-only";
+//     }
+//   }
+
+

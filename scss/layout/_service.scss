@@ -1,0 +1,127 @@
+
+// SERVICES SECTION
+
+.services{
+
+&-title{
+
+    text-align: center;
+
+
+    span{
+    color: $primary-color;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+    }
+
+}
+
+
+&-items{
+    @extend %gridThree;
+    color:lighten($primary-color, 100%)
+
+}
+
+@include breakpoint(xs-big){
+
+    &-items{
+    grid-template-columns: 1fr!important;
+    
+
+    }
+    
+}
+
+
+
+@include breakpoint(sm-md){
+
+    &-items{
+    grid-template-columns:1fr 1fr!important;
+    
+
+    }
+    
+}
+
+
+&-singleItem{
+    text-align: center;
+
+    img{
+    width: 80px;
+    height: 80px;
+    margin:0px auto 20px;
+    }
+
+    h5{
+    font-size: $fontSize * 1.5;
+    text-transform: capitalize;
+    color:lighten($titleColor, 100%);
+    }
+
+    button{
+    @extend %readMore-btn;
+
+    }
+
+
+
+}
+
+
+
+&-singleItem:nth-child(1){
+    background:$bgOrGra;
+    &:hover{
+    background:$bgOrGraHr;
+    }
+}
+&-singleItem:nth-child(2){
+    background:$bgAqGr;
+    &:hover{
+    background:$bgAqGrHr;
+    }
+}
+&-singleItem:nth-child(3){
+    background:$bgPrGr;
+    &:hover{
+    background:$bgPrGrHr;
+    }
+}
+&-singleItem:nth-child(4){
+    background:$bgBlGr;
+    &:hover{
+    background:$bgBlGrHr;
+    }
+}
+&-singleItem:nth-child(5){
+    background:$bgLbGr;
+    &:hover{
+    background:$bgLbGrHr;
+    }
+}
+&-singleItem:nth-child(6){
+    background:$bgRdGr;
+    &:hover{
+    background:$bgRdGrHr;
+    }
+}
+
+
+}
+
+@include breakpoint(xs-big){
+.services{
+    padding-top:70px!important;
+}
+}
+
+@include breakpoint(sm-md){
+.services{
+    padding-top:70px!important;
+}
+}

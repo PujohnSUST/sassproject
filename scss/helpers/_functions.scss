@@ -1,0 +1,49 @@
+// Set text color based on bg
+// @function set-text-color($color) {
+//     @if(lightness($color) > 70) {
+//       @return #333;
+//     } @else {
+//       @return #fff;
+//     }
+//   }
+
+
+// padding & margin function
+
+$paddingSpace :(20,50,70,80,100,150,200);
+
+@each $pSpace in $paddingSpace{
+
+  .padtb-#{$pSpace}{
+
+    padding:#{$pSpace}px 0px;
+  }
+
+  .padl-#{$pSpace}{
+    padding-left:#{$pSpace}px !important;
+  }
+  .padr-#{$pSpace}{
+    padding-right:#{$pSpace}px !important;
+  }
+
+  .padtop-#{$pSpace}{
+    padding-top:#{$pSpace}px;
+  }
+
+  .padbtm-#{$pSpace}{
+    padding-bottom:#{$pSpace}px;
+  }
+
+  .martb-#{$pSpace}{
+    margin:#{$pSpace}px 0px;
+  }
+
+  .martop-#{$pSpace}{
+    margin-top:#{$pSpace}px;
+  }
+
+  .marbtm-#{$pSpace}{
+    margin-bottom:#{$pSpace}px;
+  }
+
+}

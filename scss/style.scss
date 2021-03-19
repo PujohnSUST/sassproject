@@ -1,0 +1,45 @@
+/*
+SJI DESIGNERS GOALS - 2021 (Q1)
+FIRST SASS PROJECT 
+V:01
+DESIGNED BY: DEBANGSHU DAS 
+DESCRIPTION: This task is for learning purpose
+*/
+
+@charset "UTF-8";
+
+
+// 1 Configuration and helpers
+
+@import 
+'helpers/functions',
+'helpers/mixins',
+'helpers/variables',
+'helpers/helpers';
+
+
+// 2. Vendors 
+
+@import 
+'vendors/jquery-ui';
+// 'vendors/normalize';
+
+// 3. Base Stuff 
+
+@import
+'base/base';
+
+// 4. Components 
+
+@import 
+'components/buttons';
+
+// 5. Layout 
+
+@import
+'layout/header',
+'layout/service',
+'layout/portfolio',
+'layout/others',
+'layout/footer';
+

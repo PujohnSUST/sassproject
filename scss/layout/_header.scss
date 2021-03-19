@@ -1,0 +1,233 @@
+
+
+// HEADER CSS HERE 
+
+header{
+
+position: relative;
+padding:20px 0px;
+
+    .container{
+
+    .row{
+        @extend %gridTwo;
+        align-items: center;
+
+    
+        .navbar{
+
+        #mobilemenu{
+            display: none;
+        }
+
+        
+        @include breakpoint(md-only){
+            #mobilemenu{
+            display: block;
+            background:$white;
+            float:right;
+            width: 60px;
+            border:none;
+            cursor: pointer;
+            }
+
+            #mobilemenu img{
+            
+            width: 40px;
+            margin:0px auto;
+            }
+        }
+
+        
+
+
+        ul{
+    
+            list-style: none;
+            text-align: right;
+
+            @include breakpoint(md-only){
+            ul{
+                text-align: center;
+            }
+            }
+
+    
+            li{
+            display: inline;
+            margin-right:30px;
+
+            @include breakpoint(md-only){
+                li{
+                display: block;
+                margin-right: 0px;
+                margin-bottom: 20px;
+                text-align: center;
+                }
+            }
+
+            
+    
+            a{
+                display: inline-block;
+                text-transform: uppercase;
+                color:$white;
+                font-weight:700;
+                
+            }
+
+            @include breakpoint(md-only){
+                a{
+                display: block;
+                }
+            }
+
+
+            &:hover{
+                color:#403AF1;
+            }
+
+            & .loginbtn{
+                background: #FF8923;
+                padding: 12px 30px;
+                border-radius: 30px;
+            }
+            }
+
+            @include breakpoint(md-lg){
+            li{
+                margin-right: 10px!important;
+            }
+            }
+        }
+
+        @include breakpoint(md-only){
+            #formobilemenu{
+            display: none;
+            }
+
+            #formobilemenu {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            margin-top: 25px;
+            background:$bgLbGr;
+            padding: 20px;
+            text-align: center;
+            top:40px;
+            }
+
+        }
+
+        }
+
+    }
+
+    }
+
+    &::after{
+    position: absolute;
+    right:0;
+    top:0;
+    content:"";
+    background:url(../img/header-righttop.png);
+    background-repeat: no-repeat;
+    height: 486px;
+    width: 75%;
+    z-index: -1; 
+    
+    
+    }
+
+    @include breakpoint(lg-up){
+    &::after{
+        width:65%;
+    }
+    }
+
+    
+
+}
+
+// END HEADER CSS HERE 
+
+// START HERO START UP AREA 
+
+.heroArea{
+
+
+& .container{
+
+    & .row{
+    @extend %gridTwo;
+    align-items: center;
+    justify-content: space-between;
+
+
+    & .heroArea-left{
+
+        button{
+        @extend %btn;
+        @include disFlex;
+        margin-top:30px;
+
+        img{
+            margin-right:10px;
+        }
+        }
+
+        h2{
+        
+            font-size: 4vw;
+            line-height: 4.5vw;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        
+        }
+        p{
+        margin-bottom: 15px;
+        ;
+        }
+    }
+
+    @include breakpoint(xs){
+
+        & .heroArea-left{
+        justify-items: center;
+        }
+        
+    }
+
+    & .heroArea-right{
+
+        img{
+        width: 95%;
+        }
+
+    }
+
+    @include breakpoint(xs-big){
+
+        & .heroArea-right{
+        grid-area: 1/ 1 /1/ 1;
+        }
+        
+    }
+    }
+
+    @include breakpoint(xs-big){
+    .row{
+        grid-template-columns: 1fr!important;
+        align-items: center;
+        justify-content: center;
+
+    }
+    }
+
+
+}
+
+
+
+
+}

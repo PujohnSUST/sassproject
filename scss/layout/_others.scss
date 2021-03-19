@@ -1,0 +1,98 @@
+
+// TESTIMONIALS 
+
+.testimonials{
+background:url('../img/Review.png');
+background-repeat: no-repeat;
+background-size: cover;
+
+&-carousel{
+    text-align: center;
+}
+
+&-item{
+    margin:0px auto;
+    text-align: center;
+    color:$white;
+
+    img{
+    margin: 0px auto 20px;
+    }
+
+    h3{
+    color:$secondary-color;
+    }
+
+
+
+}
+
+
+}
+
+// BLOG SECTION
+
+
+.blog{
+
+
+&-rows{
+    @extend %gridThree;
+
+}
+
+@include breakpoint(xs-big){
+    &-rows{
+    grid-template-columns: 1fr!important;
+    }
+}
+
+&-item{
+
+
+    h4,p,button{
+    padding:0px 20px;
+    }
+
+    p{
+    margin:20px 0px;
+    }
+
+    button{
+    background:none;
+    border:none;
+    cursor: pointer;
+    }
+
+}
+
+
+}
+
+// CLIENT SECTION 
+
+.clients{
+background-color:#dddddd70;
+
+&-innerItems{
+
+    @include disFlex;
+    justify-content: center;
+
+
+}
+
+&-single{
+    margin:0px 0px;
+
+    img{
+    width: 60%;
+    margin:0px auto;
+    }
+
+
+}
+
+
+
+}
